@@ -32,7 +32,6 @@
         <li><a href="#skills" class="block px-6 py-2 hover:text-cyan-400">Skills</a></li>
         <li><a href="#projects" class="block px-6 py-2 hover:text-cyan-400">Projects</a></li>
         <li><a href="#achievements" class="block px-6 py-2 hover:text-cyan-400">Achievements</a></li>
-        <li><a href="#education" class="block px-6 py-2 hover:text-cyan-400">Education</a></li>
         <li><a href="#contact" class="block px-6 py-2 hover:text-cyan-400">Contact</a></li>
       </ul>
     </div>
@@ -43,7 +42,7 @@
       <li><a href="#skills" class="hover:text-cyan-400">Skills</a></li>
       <li><a href="#projects" class="hover:text-cyan-400">Projects</a></li>
       <li><a href="#achievements" class="hover:text-cyan-400">Achievements</a></li>
-      <li><a href="#education" class="hover:text-cyan-400">Education</a></li>
+     
       <li><a href="#contact" class="hover:text-cyan-400">Contact</a></li>
     </ul>
 
@@ -58,10 +57,10 @@
         <h2 class="text-gray-400 text-lg mb-2">Hello, it's me</h2>
         <h1 class="text-4xl md:text-5xl font-bold mb-2">Anika Saida</h1>
         <h3 class="text-2xl md:text-3xl text-cyan-400 font-semibold mb-4">
-          And I'm a <span id="typed" class="typing">Full Stack Developer</span>
+          I'm a <span id="typed" class="typing">Fronted Developer & UI/UX Designer</span>
         </h3>
         <p class="text-gray-400 max-w-xl mb-6">
-          I'm a CSE student at Southeast University (SEU) and a passionate full-stack & UI designer.
+          I'm a CSE student at Southeast University (SEU) and a passionate fronted & UI designer.
           I love creating clean, user-friendly, and responsive digital experiences.
         </p>
 
@@ -100,23 +99,25 @@
     </div>
   </header>
 
-  <!-- ABOUT -->
-  <section id="about" class="py-20 px-6 md:px-10">
-    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+ <!-- About -->
+ <section id="about" class="py-20 px-6 md:px-10 bg-[#0a1128]">
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
+
+    <div class="flex flex-col gap-6 w-full md:w-1/2 order-1 md:order-2">
       <div>
         <h2 class="text-3xl md:text-4xl font-bold mb-3">About <span class="text-cyan-400">Me</span></h2>
-        <h3 class="text-xl font-semibold text-cyan-400 mb-4">Full Stack Developer & UI Designer</h3>
+        <h3 class="text-xl font-semibold text-cyan-400 mb-4">Fronted Developer & UI/UX Designer</h3>
         <p class="text-gray-300 leading-relaxed mb-4">
           I'm a Computer Science and Engineering (CSE) student at Southeast University (SEU). I enjoy building efficient, responsive websites and learning new technologies. I focus on clean code, accessibility, and user-centered UI design.
         </p>
 
-        <div class="flex gap-4">
-          <a class="bg-cyan-500 hover:bg-cyan-400 text-white px-5 py-2 rounded-full font-semibold transition" href="#contact"> Contact</a>
-          <a class="border border-cyan-400 px-5 py-2 rounded-full text-gray-200 hover:bg-cyan-400 hover:text-black transition" href="./assets/Anika_Saida_CV.pdf" target="_blank">Download CV</a>
+        <div class="flex gap-4 mb-6">
+          <a class="bg-cyan-500 hover:bg-cyan-400 text-white px-5 py-2 rounded-full font-semibold transition" href="#contact">Contact</a>
+          <a class="border border-cyan-400 px-5 py-2 rounded-full text-gray-200 hover:bg-cyan-400 hover:text-black transition" href="./assets/Anika Saida (1).pdf"  target="_blank">Download CV</a>
         </div>
       </div>
 
-      <div class="bg-[#071226] p-6 rounded-xl shadow-lg">
+      <div class="bg-[#071226] p-6 rounded-xl shadow-lg w-full">
         <div class="grid grid-cols-2 gap-4">
           <div>
             <h4 class="text-gray-300 font-semibold">Location</h4>
@@ -137,7 +138,40 @@
         </div>
       </div>
     </div>
-  </section>
+
+ 
+<div class="flex justify-center md:justify-start w-full md:w-3/2 order-2 md:order-1">
+  <img 
+    src="./assets/anika.jpg" 
+    alt="Anika Saida" 
+    class="w-64 h-80 object-cover rounded-xl border-4 border-cyan-400 shadow-lg
+           transform transition-transform duration-500 
+           hover:scale-105 hover:shadow-2xl
+           animate-3dfloat"
+  >
+  <style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @layer utilities {
+      @keyframes float3D {
+        0% { transform: translateY(0) rotate(0deg); }
+        25% { transform: translateY(-5px) rotate(-1deg); }
+        50% { transform: translateY(-10px) rotate(1deg); }
+        75% { transform: translateY(-5px) rotate(-1deg); }
+        100% { transform: translateY(0) rotate(0deg); }
+      }
+
+      .animate-3dfloat {
+        animation: float3D 4s ease-in-out infinite;
+      }
+    }
+  </style>
+</div>
+  </div>
+</section>
+
 
   <!-- SKILLS -->
   <section id="skills" class="py-16 bg-[#0a1128] px-6 md:px-10">
@@ -208,6 +242,98 @@
     </div>
   </section>
 
+  <!-- PROJECTS -->
+<section id="projects" class="py-16 px-6 md:px-10 bg-[#0a1128]">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12">
+      My <span class="text-cyan-400">Projects</span>
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- Project 1 -->
+      <div class="p-6 bg-[#14213b] rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-cyan-500/40 transition transform duration-300">
+        <div class="flex justify-center mb-4">
+          <div class="bg-cyan-500/20 text-cyan-400 w-14 h-14 flex items-center justify-center rounded-full text-3xl">
+            <i class="fa-solid fa-hospital"></i>
+          </div>
+        </div>
+        <h4 class="font-semibold mb-2 text-white">Hospital Management System</h4>
+        <p class="text-gray-300 text-sm leading-relaxed">
+          A complete JavaFX and MySQL-based desktop application for managing hospital operations, including patient records, doctor schedules, and cabin bookings. Designed with a user-friendly interface and modular structure.
+        </p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="p-6 bg-[#14213b] rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-cyan-500/40 transition transform duration-300">
+        <div class="flex justify-center mb-4">
+          <div class="bg-cyan-500/20 text-cyan-400 w-14 h-14 flex items-center justify-center rounded-full text-3xl">
+            <i class="fa-solid fa-utensils"></i>
+          </div>
+        </div>
+        <h4 class="font-semibold mb-2 text-white">Cookify (Mobile App)</h4>
+        <p class="text-gray-300 text-sm leading-relaxed">
+          A complete Java,XML,and Firebase-based Android  application. Cookify acts as a <strong>digital cooking assistant</strong> for both homemakers and restaurant chefs. 
+        It promotes local ingredient usage, reduces kitchen waste, and supports young entrepreneurs in the food industry by inspiring creativity and efficiency.        </p>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="p-6 bg-[#14213b] rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-cyan-500/40 transition transform duration-300">
+        <div class="flex justify-center mb-4">
+          <div class="bg-cyan-500/20 text-cyan-400 w-14 h-14 flex items-center justify-center rounded-full text-3xl">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+        </div>
+        <h4 class="font-semibold mb-2 text-white">Customer Support Zone</h4>
+        <p class="text-gray-300 text-sm leading-relaxed">
+          A React-based web platform to manage customer service tickets and communication. Includes categorized queries, admin panel features, and dynamic UI updates for real-time response handling.
+        </p>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="p-6 bg-[#14213b] rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-cyan-500/40 transition transform duration-300">
+        <div class="flex justify-center mb-4">
+          <div class="bg-cyan-500/20 text-cyan-400 w-14 h-14 flex items-center justify-center rounded-full text-3xl">
+            <i class="fa-solid fa-compass"></i>
+          </div>
+        </div>
+        <h4 class="font-semibold mb-2 text-white">Career Compass</h4>
+        <p class="text-gray-300 text-sm leading-relaxed">
+          A career-guidance web app using React and Firebase, offering curated learning paths, internship resources, and skill-based job suggestions for students and fresh graduates.
+        </p>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="p-6 bg-[#14213b] rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-cyan-500/40 transition transform duration-300">
+        <div class="flex justify-center mb-4">
+          <div class="bg-cyan-500/20 text-cyan-400 w-14 h-14 flex items-center justify-center rounded-full text-3xl">
+            <i class="fa-solid fa-building"></i>
+          </div>
+        </div>
+        <h4 class="font-semibold mb-2 text-white">G3 Architects Website</h4>
+        <p class="text-gray-300 text-sm leading-relaxed">
+          A responsive landing page created with HTML, CSS, and Tailwind, designed for a modern architecture studio. Features smooth scroll navigation and a clean grid layout.
+        </p>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="p-6 bg-[#14213b] rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-cyan-500/40 transition transform duration-300">
+        <div class="flex justify-center mb-4">
+          <div class="bg-cyan-500/20 text-cyan-400 w-14 h-14 flex items-center justify-center rounded-full text-3xl">
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+        </div>
+        <h4 class="font-semibold mb-2 text-white">English Janala</h4>
+        <p class="text-gray-300 text-sm leading-relaxed">
+          An interactive educational platform focused on improving English communication. Includes vocabulary exercises, reading lessons, and quiz sections with responsive UI.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
  <!-- ACHIEVEMENTS -->
 <section id="achievements" class="py-16 px-6 md:px-10 bg-[#0a1128]">
   <div class="max-w-6xl mx-auto text-center">
@@ -266,151 +392,67 @@
   </div>
 </section>
 
-
-  <!-- EDUCATION -->
-  <section id="education" class="py-16 bg-[#0a1128] px-6 md:px-10">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-8">My <span class="text-cyan-400">Education</span></h2>
-
-    <div class="grid md:grid-cols-2 gap-6 ">
-      <div class="p-6 bg-[#14213b] rounded-xl shadow-lg flex items-start gap-4 hover:scale-105">
-        <div class="text-cyan-400 text-3xl mt-1">
-          <i class="fa-solid fa-graduation-cap"></i>
-        </div>
-        <div class="text-left">
-          <h4 class="font-semibold text-white mb-1">B.Sc. in Computer Science & Engineering (CSE)</h4>
-          <p class="text-gray-300"><i class="fa-solid fa-university mr-2"></i>Southeast University</p>
-          <p class="text-gray-400 text-sm"><i class="fa-regular fa-calendar-days mr-2"></i>Ongoing</p>
-        </div>
-      </div>
-
-     
-      <div class="p-6 bg-[#14213b] rounded-xl shadow-lg flex items-start gap-4 hover:scale-105">
-        <div class="text-cyan-400 text-3xl mt-1">
-          <i class="fa-solid fa-school"></i>
-        </div>
-        <div class="text-left">
-          <h4 class="font-semibold text-white mb-1">Higher Secondary (HSC)</h4>
-          <p class="text-gray-300"><i class="fa-solid fa-university mr-2"></i>KNADC</p>
-          <p class="text-gray-400 text-sm"><i class="fa-regular fa-calendar-days mr-2"></i>Year of Completion: 2021</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  <!-- PROJECTS -->
-<section id="projects" class="py-16 px-6 md:px-10 bg-[#0a1128]">
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="py-16 bg-[#0a1128] px-6 md:px-10">
   <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-12">My <span class="text-cyan-400">Projects</span></h2>
+    <h2 class="text-3xl md:text-4xl font-bold mb-10">
+      Testimonials <span class="text-cyan-400">Feedback</span>
+    </h2>
 
     <div class="grid md:grid-cols-3 gap-8">
-     
-      <div class="p-6 bg-[#14213b] rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-cyan-500/40 transition transform duration-300">
-        <div class="flex justify-center mb-4">
-          <div class="bg-cyan-500/20 text-cyan-400 w-14 h-14 flex items-center justify-center rounded-full text-3xl">
-            <i class="fa-solid fa-hospital"></i>
-          </div>
-        </div>
-        <h4 class="font-semibold mb-2 text-white">Hospital Management</h4>
-        <p class="text-gray-300 text-sm mb-4">JavaFX + MySQL system to manage cabins, bookings, and patient info.</p>
-        <div class="flex gap-3 justify-center">
-          <a class="text-sm px-4 py-2 border border-cyan-400 rounded-full hover:bg-cyan-400 hover:text-black transition" href="#">Live</a>
-          <a class="text-sm px-4 py-2 border border-cyan-400 rounded-full hover:bg-cyan-400 hover:text-black transition" href="#">Code</a>
+      
+      <!-- Testimonial 1 -->
+      <div class="p-6 bg-[#14213b] rounded-xl shadow-lg hover:-translate-y-2 transition transform duration-300">
+        <div class="flex flex-col items-center text-center">
+          <img src="https://i.pravatar.cc/120?img=12" alt="Teacher 1" class="w-24 h-24 rounded-full border-4 border-cyan-400 mb-4 object-cover" />
+          <h4 class="text-xl font-semibold text-white mb-1">Prof. Rahman</h4>
+          <p class="text-gray-400 text-sm mb-3">CSE Department — SEU</p>
+          <p class="text-gray-300 text-sm italic">
+            “Anika shows excellent dedication and problem-solving skills. She always delivers work with precision and creativity.”
+          </p>
         </div>
       </div>
 
-      <div class="p-6 bg-[#14213b] rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-cyan-500/40 transition transform duration-300">
-        <div class="flex justify-center mb-4">
-          <div class="bg-cyan-500/20 text-cyan-400 w-14 h-14 flex items-center justify-center rounded-full text-3xl">
-            <i class="fa-solid fa-utensils"></i>
-          </div>
-        </div>
-        <h4 class="font-semibold mb-2 text-white">Cookify (Mobile App)</h4>
-        <p class="text-gray-300 text-sm mb-4">Android app (XML + Java + Firebase) for recipe discovery & management.</p>
-        <div class="flex gap-3 justify-center">
-          <a class="text-sm px-4 py-2 border border-cyan-400 rounded-full hover:bg-cyan-400 hover:text-black transition" href="#">Play</a>
-          <a class="text-sm px-4 py-2 border border-cyan-400 rounded-full hover:bg-cyan-400 hover:text-black transition" href="#">Code</a>
+      <!-- Testimonial 2 -->
+      <div class="p-6 bg-[#14213b] rounded-xl shadow-lg hover:-translate-y-2 transition transform duration-300">
+        <div class="flex flex-col items-center text-center">
+          <img src="./assets/nupur.jpg" alt="Mentor 1" class="w-24 h-24 rounded-full border-4 border-cyan-400 mb-4 object-cover" />
+          <h4 class="text-xl font-semibold text-white mb-1">Ms. Nusrat Haque</h4>
+          <p class="text-gray-400 text-sm mb-3">Mentor — CodeWave</p>
+          <p class="text-gray-300 text-sm italic">
+            “She’s proactive, highly organized, and quick to learn new technologies. A pleasure to mentor.”
+          </p>
         </div>
       </div>
 
-      <div class="p-6 bg-[#14213b] rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-cyan-500/40 transition transform duration-300">
-        <div class="flex justify-center mb-4">
-          <div class="bg-cyan-500/20 text-cyan-400 w-14 h-14 flex items-center justify-center rounded-full text-3xl">
-            <i class="fa-solid fa-headset"></i>
-          </div>
-        </div>
-        <h4 class="font-semibold mb-2 text-white">Customer Support Zone</h4>
-        <p class="text-gray-300 text-sm mb-4">React app with routing & real-time UI to manage support tickets.</p>
-        <div class="flex gap-3 justify-center">
-          <a class="text-sm px-4 py-2 border border-cyan-400 rounded-full hover:bg-cyan-400 hover:text-black transition" href="#">Live</a>
-          <a class="text-sm px-4 py-2 border border-cyan-400 rounded-full hover:bg-cyan-400 hover:text-black transition" href="#">Code</a>
+      <!-- Testimonial 3 -->
+      <div class="p-6 bg-[#14213b] rounded-xl shadow-lg hover:-translate-y-2 transition transform duration-300">
+        <div class="flex flex-col items-center text-center">
+          <img src="./assets/binty.jpg" alt="Teammate 1" class="w-24 h-24 rounded-full border-4 border-cyan-400 mb-4 object-cover" />
+          <h4 class="text-xl font-semibold text-white mb-1">Zafrin Binty</h4>
+          <p class="text-gray-400 text-sm mb-3">Teammate — Project X</p>
+          <p class="text-gray-300 text-sm italic">
+            “Working with Anika was seamless. She’s collaborative, communicative, and ensures quality in every task.”
+          </p>
         </div>
       </div>
 
-      <div class="p-6 bg-[#14213b] rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-cyan-500/40 transition transform duration-300">
-        <div class="flex justify-center mb-4">
-          <div class="bg-cyan-500/20 text-cyan-400 w-14 h-14 flex items-center justify-center rounded-full text-3xl">
-            <i class="fa-solid fa-compass"></i>
-          </div>
-        </div>
-        <h4 class="font-semibold mb-2 text-white">Career Compass</h4>
-        <p class="text-gray-300 text-sm mb-4">React + Firebase app for career exploration & resources.</p>
-        <div class="flex gap-3 justify-center">
-          <a class="text-sm px-4 py-2 border border-cyan-400 rounded-full hover:bg-cyan-400 hover:text-black transition" href="#">Live</a>
-          <a class="text-sm px-4 py-2 border border-cyan-400 rounded-full hover:bg-cyan-400 hover:text-black transition" href="#">Code</a>
-        </div>
-      </div>
-
-      <div class="p-6 bg-[#14213b] rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-cyan-500/40 transition transform duration-300">
-        <div class="flex justify-center mb-4">
-          <div class="bg-cyan-500/20 text-cyan-400 w-14 h-14 flex items-center justify-center rounded-full text-3xl">
-            <i class="fa-solid fa-building"></i>
-          </div>
-        </div>
-        <h4 class="font-semibold mb-2 text-white">G3 Architects Website</h4>
-        <p class="text-gray-300 text-sm mb-4">Modern architecture-themed responsive website.</p>
-        <div class="flex gap-3 justify-center">
-          <a class="text-sm px-4 py-2 border border-cyan-400 rounded-full hover:bg-cyan-400 hover:text-black transition" href="#">Live</a>
-          <a class="text-sm px-4 py-2 border border-cyan-400 rounded-full hover:bg-cyan-400 hover:text-black transition" href="#">Code</a>
-        </div>
-      </div>
-
-      <div class="p-6 bg-[#14213b] rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-cyan-500/40 transition transform duration-300">
-        <div class="flex justify-center mb-4">
-          <div class="bg-cyan-500/20 text-cyan-400 w-14 h-14 flex items-center justify-center rounded-full text-3xl">
-            <i class="fa-solid fa-book-open"></i>
-          </div>
-        </div>
-        <h4 class="font-semibold mb-2 text-white">English Janala</h4>
-        <p class="text-gray-300 text-sm mb-4">Interactive platform to improve English skills.</p>
-        <div class="flex gap-3 justify-center">
-          <a class="text-sm px-4 py-2 border border-cyan-400 rounded-full hover:bg-cyan-400 hover:text-black transition" href="#">Live</a>
-          <a class="text-sm px-4 py-2 border border-cyan-400 rounded-full hover:bg-cyan-400 hover:text-black transition" href="#">Code</a>
-        </div>
-      </div>
     </div>
   </div>
 </section>
-
 
   <!-- CONTACT -->
  <section id="contact" class="py-16 bg-[#071226] px-6 md:px-10">
   <div class="max-w-6xl mx-auto">
-    
-    
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">
       Get In <span class="text-cyan-400">Touch</span>
     </h2>
 
-  
     <div class="grid md:grid-cols-2 gap-10 items-start">
       
-     
       <div class="text-center md:text-left">
         <p class="text-gray-400 mb-6">
-          I’d love to connect! Whether you want to collaborate, discuss a project idea, or just say hi —
+          I’d love to connect! Whether you want to collaborate, discuss a project idea, or just say hi — 
           feel free to reach out through the form or my social links below.
         </p>
 
@@ -430,13 +472,33 @@
         </ul>
       </div>
 
-     
       <div>
-        <form class="space-y-4 text-left">
-          <input class="w-full p-3 rounded-md bg-[#0a1128] border border-gray-600 outline-none text-white placeholder-gray-400" type="text" placeholder="Your Name" />
-          <input class="w-full p-3 rounded-md bg-[#0a1128] border border-gray-600 outline-none text-white placeholder-gray-400" type="email" placeholder="Your Email" />
-          <textarea class="w-full p-3 rounded-md bg-[#0a1128] border border-gray-600 outline-none text-white placeholder-gray-400" rows="5" placeholder="Your Message"></textarea>
-          <button class="w-full bg-cyan-500 hover:bg-cyan-400 text-white px-6 py-2 rounded-full font-semibold transition">Send Message</button>
+        <form 
+          action="https://api.web3forms.com/submit" 
+          method="POST"
+          class="space-y-4 text-left"
+        >
+          >
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+          <input type="hidden" name="subject" value="New message from Portfolio Contact Form">
+          <input 
+            class="w-full p-3 rounded-md bg-[#0a1128] border border-gray-600 outline-none text-white placeholder-gray-400" 
+            type="text" name="name" placeholder="Your Name" required 
+          />
+          <input 
+            class="w-full p-3 rounded-md bg-[#0a1128] border border-gray-600 outline-none text-white placeholder-gray-400" 
+            type="email" name="email" placeholder="Your Email" required 
+          />
+          <textarea 
+            class="w-full p-3 rounded-md bg-[#0a1128] border border-gray-600 outline-none text-white placeholder-gray-400" 
+            rows="5" name="message" placeholder="Your Message" required
+          ></textarea>
+          <button 
+            type="submit" 
+            class="w-full bg-cyan-500 hover:bg-cyan-400 text-white px-6 py-2 rounded-full font-semibold transition"
+          >
+            Send Message
+          </button>
         </form>
       </div>
 
@@ -444,76 +506,6 @@
   </div>
 </section>
 
-<!-- CLIENT REVIEWS -->
-<section id="reviews" class="py-16 bg-[#0a1128] px-6 md:px-10">
-  <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-10">
-      Client <span class="text-cyan-400">Reviews</span>
-    </h2>
-
-    <div class="grid md:grid-cols-3 gap-8">
-      
-      <!-- Review 1 -->
-      <div class="p-6 bg-[#14213b] rounded-xl shadow-lg hover:-translate-y-2 transition transform duration-300">
-        <div class="flex flex-col items-center text-center">
-          <img src="https://i.pravatar.cc/120?img=12" alt="Client 1" class="w-24 h-24 rounded-full border-4 border-cyan-400 mb-4 object-cover" />
-          <h4 class="text-xl font-semibold text-white mb-1">Yash Rahman</h4>
-          <p class="text-gray-400 text-sm mb-3">Founder — AR Web Solutions</p>
-          <p class="text-gray-300 text-sm italic">
-            “Working with Anika was a delight! She built my website exactly as I envisioned — modern, responsive, and fast. Her dedication and communication were outstanding.”
-          </p>
-          
-          <div class="flex justify-center mt-3 space-x-1 text-cyan-400">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.916 1.524 8.278L12 18.896l-7.46 4.604 1.524-8.278L0 9.306l8.332-1.151z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.916 1.524 8.278L12 18.896l-7.46 4.604 1.524-8.278L0 9.306l8.332-1.151z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.916 1.524 8.278L12 18.896l-7.46 4.604 1.524-8.278L0 9.306l8.332-1.151z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.916 1.524 8.278L12 18.896l-7.46 4.604 1.524-8.278L0 9.306l8.332-1.151z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.916 1.524 8.278L12 18.896l-7.46 4.604 1.524-8.278L0 9.306l8.332-1.151z"/></svg>
-          </div>
-        </div>
-      </div>
-
-      <!-- Review 2 -->
-      <div class="p-6 bg-[#14213b] rounded-xl shadow-lg hover:-translate-y-2 transition transform duration-300">
-        <div class="flex flex-col items-center text-center">
-          <img src="./assets/nupur.jpg" alt="Client 2" class="w-24 h-24 rounded-full border-4 border-cyan-400 mb-4 object-cover" />
-          <h4 class="text-xl font-semibold text-white mb-1">Fahima Haque Nupur</h4>
-          <p class="text-gray-400 text-sm mb-3">Project Manager — CodeWave</p>
-          <p class="text-gray-300 text-sm italic">
-            “Anika delivered our full-stack project on time and with great quality. Her UI/UX sense is top-notch, and she’s very proactive during development.”
-          </p>
-          <div class="flex justify-center mt-3 space-x-1 text-cyan-400">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.916 1.524 8.278L12 18.896l-7.46 4.604 1.524-8.278L0 9.306l8.332-1.151z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.916 1.524 8.278L12 18.896l-7.46 4.604 1.524-8.278L0 9.306l8.332-1.151z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.916 1.524 8.278L12 18.896l-7.46 4.604 1.524-8.278L0 9.306l8.332-1.151z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.916 1.524 8.278L12 18.896l-7.46 4.604 1.524-8.278L0 9.306l8.332-1.151z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current opacity-40" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.916 1.524 8.278L12 18.896l-7.46 4.604 1.524-8.278L0 9.306l8.332-1.151z"/></svg>
-          </div>
-        </div>
-      </div>
-
-      <!-- Review 3 -->
-      <div class="p-6 bg-[#14213b] rounded-xl shadow-lg hover:-translate-y-2 transition transform duration-300">
-        <div class="flex flex-col items-center text-center">
-          <img src="./assets/binty.jpg" alt="Client 3" class="w-24 h-24 rounded-full border-4 border-cyan-400 mb-4 object-cover" />
-          <h4 class="text-xl font-semibold text-white mb-1">Zafrin Binty</h4>
-          <p class="text-gray-400 text-sm mb-3">Entrepreneur — Brandify</p>
-          <p class="text-gray-300 text-sm italic">
-            “I highly recommend Anika! She not only designed a stunning site for my startup but also made sure every detail matched my brand identity perfectly.”
-          </p>
-          <div class="flex justify-center mt-3 space-x-1 text-cyan-400">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.916 1.524 8.278L12 18.896l-7.46 4.604 1.524-8.278L0 9.306l8.332-1.151z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.916 1.524 8.278L12 18.896l-7.46 4.604 1.524-8.278L0 9.306l8.332-1.151z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.916 1.524 8.278L12 18.896l-7.46 4.604 1.524-8.278L0 9.306l8.332-1.151z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.916 1.524 8.278L12 18.896l-7.46 4.604 1.524-8.278L0 9.306l8.332-1.151z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.916 1.524 8.278L12 18.896l-7.46 4.604 1.524-8.278L0 9.306l8.332-1.151z"/></svg>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
 
   <!-- FOOTER -->
   <footer class="py-8 text-center bg-[#071226]">
