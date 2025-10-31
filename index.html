@@ -438,14 +438,15 @@
 </section>
 
   <!-- CONTACT -->
- <section id="contact" class="py-16 bg-[#071226] px-6 md:px-10">
+<section id="contact" class="py-16 bg-[#071226] px-6 md:px-10">
   <div class="max-w-6xl mx-auto">
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-white">
       Get In <span class="text-cyan-400">Touch</span>
     </h2>
 
     <div class="grid md:grid-cols-2 gap-10 items-start">
       
+      <!-- Left Side: Contact Info -->
       <div class="text-center md:text-left">
         <p class="text-gray-400 mb-6">
           I’d love to connect! Whether you want to collaborate, discuss a project idea, or just say hi — 
@@ -468,29 +469,48 @@
         </ul>
       </div>
 
+      <!-- Right Side: Contact Form -->
       <div>
         <form 
           action="https://api.web3forms.com/submit" 
-          method="POST"
+          method="POST" 
           class="space-y-4 text-left"
         >
-          
-          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+          <!-- Hidden Config Fields -->
+          <input type="hidden" name="access_key" value="b2f529be-6405-458a-a9ae-808ec04ad7f0">
           <input type="hidden" name="subject" value="New message from Portfolio Contact Form">
+          <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+          <!-- Name -->
           <input 
-            class="w-full p-3 rounded-md bg-[#0a1128] border border-gray-600 outline-none text-white placeholder-gray-400" 
-            type="text" name="name" placeholder="Your Name" required 
-          />
+            type="text" 
+            name="name" 
+            placeholder="Your Name" 
+            required
+            class="w-full p-3 rounded-md bg-[#0a1128] border border-gray-600 outline-none text-white placeholder-gray-400 focus:border-cyan-400"
+          >
+
+          <!-- Email -->
           <input 
-            class="w-full p-3 rounded-md bg-[#0a1128] border border-gray-600 outline-none text-white placeholder-gray-400" 
-            type="email" name="email" placeholder="Your Email" required 
-          />
+            type="email" 
+            name="email" 
+            placeholder="Your Email" 
+            required
+            class="w-full p-3 rounded-md bg-[#0a1128] border border-gray-600 outline-none text-white placeholder-gray-400 focus:border-cyan-400"
+          >
+
+          <!-- Message -->
           <textarea 
-            class="w-full p-3 rounded-md bg-[#0a1128] border border-gray-600 outline-none text-white placeholder-gray-400" 
-            rows="5" name="message" placeholder="Your Message" required
+            name="message" 
+            rows="5" 
+            placeholder="Your Message" 
+            required
+            class="w-full p-3 rounded-md bg-[#0a1128] border border-gray-600 outline-none text-white placeholder-gray-400 focus:border-cyan-400"
           ></textarea>
+
+          <!-- Submit Button -->
           <button 
-            type="submit" 
+            type="submit"
             class="w-full bg-cyan-500 hover:bg-cyan-400 text-white px-6 py-2 rounded-full font-semibold transition"
           >
             Send Message
@@ -501,6 +521,7 @@
     </div>
   </div>
 </section>
+
 
 
   <!-- FOOTER -->
